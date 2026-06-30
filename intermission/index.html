@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Intermission Recap · June 2026</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Hanken+Grotesk:wght@400;500&family=Spline+Sans+Mono:wght@400;500&family=Caveat:wght@500;700&display=swap');
+:root{
+  --sky-1:#1c141f;--sky-2:#341d2d;--sky-3:#5e3329;--ember:#8a4327;
+  --ink:#f3e7d6;--ink-soft:rgba(243,231,214,.65);--ink-faint:rgba(243,231,214,.30);
+  --paper:#fefdf8;--paper-ink:#2c1d23;--paper-meta:#8c6a57;
+  --spritz:#e2682e;--gold:#c9952f;--cork:#9e6b2e;
+}
+*,*::before,*::after{box-sizing:border-box;}
+html,body{margin:0;padding:0;}
+body{font-family:'Hanken Grotesk',system-ui,sans-serif;color:var(--ink);
+  background:radial-gradient(120% 70% at 50% -8%,rgba(226,104,46,.28),rgba(226,104,46,0) 55%),
+  linear-gradient(175deg,var(--sky-1) 0%,var(--sky-2) 45%,var(--sky-3) 82%,var(--ember) 100%);
+  background-attachment:fixed;min-height:100vh;-webkit-font-smoothing:antialiased;}
+.wrap{max-width:900px;margin:0 auto;padding:42px 20px 80px;}
+.eyebrow{font-family:'Spline Sans Mono',monospace;font-size:11px;letter-spacing:.34em;text-transform:uppercase;color:var(--ink-soft);display:flex;align-items:center;gap:10px;}
+.eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--spritz);box-shadow:0 0 12px 2px rgba(226,104,46,.7);}
+.title{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(42px,11vw,82px);line-height:.86;margin:14px 0 0;letter-spacing:-.01em;}
+.title .yr{font-family:'Spline Sans Mono',monospace;font-weight:400;font-size:clamp(14px,3.5vw,19px);letter-spacing:.18em;vertical-align:top;color:var(--gold);margin-left:.4em;}
+.standfirst{margin:16px 0 0;max-width:42ch;color:var(--ink-soft);font-size:16px;}
+.hint{font-family:'Spline Sans Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint);margin:14px 0 0;}
+.rule{height:1px;background:linear-gradient(90deg,var(--ink-faint),transparent);margin:18px 0 28px;border:0;}
+.week-board{
+  background-color:var(--cork);
+  background-image:
+    radial-gradient(circle at 10% 18%,rgba(255,200,100,.13) 0%,transparent 45%),
+    radial-gradient(circle at 90% 82%,rgba(50,15,0,.10) 0%,transparent 45%),
+    repeating-linear-gradient(47deg,transparent,transparent 3px,rgba(0,0,0,.014) 3px,rgba(0,0,0,.014) 4px),
+    repeating-linear-gradient(-47deg,transparent,transparent 3px,rgba(0,0,0,.014) 3px,rgba(0,0,0,.014) 4px);
+  border-radius:10px;padding:24px 22px 32px;margin-bottom:28px;
+  box-shadow:0 10px 48px rgba(0,0,0,.52),inset 0 1px 0 rgba(255,220,150,.18);
+}
+.week-header{display:flex;align-items:center;gap:11px;margin-bottom:24px;flex-wrap:wrap;}
+.week-pin{width:17px;height:17px;border-radius:50%;flex:0 0 auto;background:radial-gradient(circle at 35% 35%,#f97,var(--spritz));box-shadow:0 2px 8px rgba(0,0,0,.55),inset 0 1px 2px rgba(255,255,255,.25);}
+.week-tag{font-family:'Fraunces',serif;font-weight:500;font-size:26px;line-height:1;color:var(--paper-ink);background:var(--paper);padding:5px 16px 8px;border-radius:4px;box-shadow:1px 2px 10px rgba(0,0,0,.30);transform:rotate(-0.5deg);white-space:nowrap;}
+.week-dates{font-family:'Spline Sans Mono',monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,235,200,.48);}
+.polaroid-grid{display:flex;flex-wrap:wrap;gap:22px;align-items:flex-start;}
+.polaroid{--cw:220px;width:var(--cw);flex:0 0 auto;background:var(--paper);border-radius:3px;box-shadow:3px 5px 24px rgba(0,0,0,.40),0 1px 4px rgba(0,0,0,.20);overflow:hidden;display:flex;flex-direction:column;}
+.photo-area{width:100%;aspect-ratio:1/1;overflow:hidden;background:#d8c8b0;}
+.photo-area img{width:100%;height:100%;object-fit:cover;display:block;}
+.polaroid-label{font-family:'Caveat',cursive;font-weight:700;font-size:17px;color:#3a2a1a;text-align:center;padding:9px 8px 12px;line-height:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:0 0 auto;}
+footer{margin-top:28px;font-family:'Spline Sans Mono',monospace;font-size:11px;letter-spacing:.06em;color:var(--ink-faint);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;}
+@media(max-width:520px){.polaroid{--cw:155px;}.week-board{padding:18px 14px 24px;}.polaroid-grid{gap:14px;}.week-tag{font-size:21px;}}
+@media(min-width:680px){.polaroid{--cw:244px;}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header>
+    <div class="eyebrow"><span class="dot"></span>An Intermission · Toronto</div>
+    <h1 class="title">Intermission Recap</h1>
+    <p class="standfirst">June 1 – 28. What I got up to!</p>
+    
+    <hr class="rule"/>
+  </header>
+  <div id="weeks"></div>
+  <footer><span>June 2026 · 12 moments · 4 weeks</span><span>kept on paper</span></footer>
+</main>
+<script>
+const CARDS=[{"id": "lisbon", "week": 1, "sort": 1, "when": "Jun 4–5", "category": "travel", "title": "Lisbon", "note": "Two nights in the city before heading south. Tuk tuks, pastéis de nata, and the girls in matching sunglasses.", "photo": "IMG_2173.jpeg"}, {"id": "algarve", "week": 1, "sort": 2, "when": "Jun 6–10", "category": "travel", "title": "The Algarve", "note": "Five days of pool, beach, and doing nothing fast. Exactly right.", "photo": "IMG_1905.jpeg"}, {"id": "riding-pt", "week": 1, "sort": 3, "when": "Jun 5 · 8 · 9", "category": "movement", "title": "Riding in the Algarve", "note": "Three lessons at Albufeira Riding Centre — jumping, cantering through the orange groves, and a family trek. Four rides in all.", "photo": "IMG_2097.jpeg"}, {"id": "emma-grad", "week": 2, "sort": 1, "when": "Jun 17", "category": "milestone", "title": "Emma's graduation", "note": "Grad cap, teddy bear, Congrats Grad 2026. Preschool done.", "photo": "IMG_2257.jpeg"}, {"id": "piano", "week": 2, "sort": 2, "when": "Jun ~15", "category": "milestone", "title": "Blythe's recital", "note": "End of year piano recital. Flowers, a Schimmel grand, and a very proud little sister.", "photo": "IMG_2312.jpeg"}, {"id": "garden", "week": 2, "sort": 3, "when": "Jun 11–17", "category": "garden", "title": "In the garden", "note": "The side yard, properly done at last. New raised bed planted too.", "photo": "27F57B66-EADD-47C0-B520-B90C0546860F.jpeg"}, {"id": "spritz", "week": 3, "sort": 1, "when": "Jun 20", "category": "gathering", "title": "Summer Spritz", "note": "26 people in the backyard for aperitivo. The party I'd been planning all month.", "photo": "IMG_2347.jpeg"}, {"id": "bday", "week": 3, "sort": 2, "when": "Jun 20–22", "category": "milestone", "title": "Birthday", "note": "Cake came out at the party — a surprise. Then June 22 was slow and quiet, exactly as planned.", "photo": "IMG_3194.jpeg"}, {"id": "jays", "week": 3, "sort": 3, "when": "Jun ~21", "category": "gathering", "title": "Blue Jays game", "note": "Girls' afternoon at Rogers Centre. Ace photobombed us.", "photo": "IMG_4151.jpeg"}, {"id": "lastday", "week": 4, "sort": 1, "when": "Jun 25", "category": "milestone", "title": "Blythe's last day", "note": "Last day of Grade 1. Age 7, 4'2\", wants to be a teacher. She's got this.", "photo": "IMG_2599.jpeg"}, {"id": "cottage", "week": 4, "sort": 2, "when": "Jun 26–28", "category": "travel", "title": "Cottage weekend", "note": "Last weekend of the intermission. All the cousins, all the corn, a lake out the window.", "photo": "IMG_2638.jpeg"}, {"id": "lake", "week": 4, "sort": 3, "when": "Jun 26–28", "category": "travel", "title": "On the lake", "note": "Out on the water with the whole crew.", "photo": "IMG_4831.jpeg"}];
+const IMAGES={};
+const CATS={travel:{label:'Travel',hex:'#3c6e91'},garden:{label:'Garden',hex:'#5e7a30'},gathering:{label:'Gathering',hex:'#e2682e'},milestone:{label:'Milestone',hex:'#bf5b86'},everyday:{label:'Everyday',hex:'#b07b57'},movement:{label:'Movement',hex:'#c04e25'},reading:{label:'Reading',hex:'#9a6a3c'}};
+const WN={1:'Portugal',2:'Back home',3:'The celebrations',4:'The close'};
+const WD={1:'Jun 1–10',2:'Jun 11–17',3:'Jun 18–24',4:'Jun 25–28'};
+function esc(s){return(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+function tilt(id){let h=0;for(let c of id)h=((h<<5)-h)+c.charCodeAt(0);return(((Math.abs(h)%80)-40)/13).toFixed(1);}
+function buildCard(c){
+  const cat=CATS[c.category]||CATS.everyday;
+  const src=IMAGES[c.photo]||('./images/'+c.photo);
+  return `<div class="polaroid" style="transform:rotate(${tilt(c.id)}deg)"><div class="photo-area"><img loading="lazy" src="${src}" alt="${esc(c.title)}"/></div><div class="polaroid-label">${esc(c.title)}</div></div>`;
+}
+function render(){
+  const weeks={};
+  for(const c of CARDS)(weeks[c.week]||(weeks[c.week]=[])).push(c);
+  const el=document.getElementById('weeks');el.innerHTML='';
+  for(const wk of[1,2,3,4]){
+    const cards=(weeks[wk]||[]).sort((a,b)=>a.sort-b.sort);
+    if(!cards.length)continue;
+    const sec=document.createElement('section');sec.className='week-board';
+    sec.innerHTML=`<div class="week-header"><span class="week-pin"></span><span class="week-tag">${WN[wk]}</span><span class="week-dates">${WD[wk]}</span></div><div class="polaroid-grid">${cards.map(buildCard).join('')}</div>`;
+    el.appendChild(sec);
+  }
+}
+render();
+</script>
+</body>
+</html>
